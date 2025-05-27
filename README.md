@@ -1,5 +1,5 @@
 # good presentations
 
-bun i && bun run start
+bun i && bun start
 
 -> go to http://localhost:3450/present/Example
