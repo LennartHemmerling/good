@@ -1,0 +1,20 @@
+{
+    "name": "good",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "workspaces": [
+        "packages/good/*",
+        "packages/presentations"
+    ],
+    "scripts": {
+        "prettier:all": "prettier \"**/*\" --write --ignore-path ./.prettierignore --config ./.prettierrc --ignore-unknown",
+        "prepare:start": "mkdir -p packages/good/start/public/ && cp -rf packages/presentations/public/ packages/good/start/",
+        "start": "bun run prepare:start && cd packages/good/start && bun start"
+    },
+    "devDependencies": {
+        "prettier": "^3.5.2",
+        "@prettier/plugin-pug": "^3.2.1",
+        "@trivago/prettier-plugin-sort-imports": "^5.2.2"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "good-presentations",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "dependencies": {
+        "vue": "^3.5.13",
+        "vue-router": "^4.5.0",
+        "@vueuse/core": "^13.2.0",
+        "good-components": "*"
+    },
+    "devDependencies": {
+        "@vue/language-plugin-pug": "^2.2.8",
+        "pug": "^3.0.3",
+        "types": "*"
+    }
+}

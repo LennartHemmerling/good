@@ -1,0 +1,43 @@
+{
+    "semi": false,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "none",
+
+    "plugins": [
+        "@prettier/plugin-pug",
+        "@trivago/prettier-plugin-sort-imports"
+    ],
+
+    "importOrder": ["^[./]"],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+
+    "pugFramework": "vue",
+    "pugSortAttributes": "asc",
+    "pugSortAttributesBeginning": [
+        "v-show",
+        "v-if",
+        "v-else-if",
+        "v-else",
+        "v-for",
+        "index",
+        "id",
+        "class",
+        "style",
+        "is",
+        "name",
+        "icon",
+        "type",
+        "value",
+        "v-model",
+        "min",
+        "max",
+        "step",
+        "controller",
+        "meta",
+        "design",
+        "pattern"
+    ],
+    "pugSingleFileComponentIndentation": true
+}

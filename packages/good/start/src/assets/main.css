@@ -1,0 +1,83 @@
+@import './base.css';
+
+* {
+    letter-spacing: 2px;
+    font-size: 30px;
+
+    --white-1: #fefefe;
+    --white-2: #ddd;
+    --green-1: #a5d97d;
+
+    --black-1: #333;
+}
+
+strong {
+    font-weight: 800;
+}
+
+h1,
+h1 * {
+    font-size: 60px;
+}
+
+h2,
+h2 * {
+    font-size: 40px;
+}
+
+.text {
+    padding-right: 210px;
+}
+
+i {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button {
+    background-color: var(--white-1);
+    border-radius: 10px;
+    border: solid 3px var(--white-2);
+
+    padding: 15px;
+
+    transition:
+        background-color 200ms ease-in-out,
+        scale 200ms ease-in-out;
+}
+
+button:hover {
+    scale: 1.02;
+}
+
+button:active {
+    background-color: var(--white-2);
+
+    scale: 1.1;
+}
+
+ul li {
+    padding-bottom: 40px;
+}
+
+ul li > p {
+    font-size: 25px;
+}
+
+.shadow {
+    box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.marked {
+    margin: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    display: inline;
+
+    background-color: var(--green-1);
+
+    padding: 5px;
+}
